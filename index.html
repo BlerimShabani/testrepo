@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Any relevant title you want to give</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4mMOv1aD7UpM7YGXiCntfG2nBV0dtLBojwjRgXIDXCHZi6CQk_3Gr8e_-4UI1wtqQejpaqSPCp5JN5C7aEKh9HbrN313LVwhJdF8PA7_UE7xUsfr3EKdarRz1AWWNIQ4-b-V9WiS9mMHn5kMl9i4z45VFITJRZA3GcE9dMaCSzHXsKBt6STJLONum4upPdsG5nfp-vV7tTSEwuD-olbXtfqw39hyveYrknbGlSNYtko" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly90aGVpYWRvY2tlci0yLWxhYnMtcHJvZC10aGVpYWs4cy00LXRvcjAxLmxhYnMuY29nbml0aXZlY2xhc3MuYWkvdXNlci9ibGVyaW1zaGFiYW4vZmlsZXMvZG93bmxvYWQvP2lkPWE0NDU3OWIyLTkzMjUtNDE1Yi1hYzM1LWVjOWE3NDdiZmRjYg"/><script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+
+        Amount <input type="number"  id="principal">  <br/>
+        Rate <input type="range" onchange="updateRate()" id="rate" min="1" max="20" step="0.25" value="10.25"><span id="rate_val">
+            10.25%
+            </span>
+            <br>
+        No. of Years <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        Interest : 
+
+        <button onclick="compute()">Compute Interest</button><br><br>
+        
+        <span id="result"></span><br><br>
+        
+        <footer>
+            &#169; This Calculator belongs to --Blerim Shabani--
+        </footer>
+        </div>
+        
+    </body>
+</html>
